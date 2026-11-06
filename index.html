@@ -25,13 +25,16 @@
 
             <a-cylinder position="0 0.1 0" radius="0.55" height="0.2" color="#7F8C8D"></a-cylinder>
 
-            <a-torus position="0 0.6 0" rotation="90 0 0" radius="0.65" radius-tubular="0.012" color="#F1C40F"></a-torus>
+            <a-torus position="0 0.6 0" rotation="90 0 0" radius="0.65" radius-tubular="0.012" color="#F1C40F"
+                     animation="property: rotation; to: 90 360 0; dur: 6000; easing: linear; loop: true"></a-torus>
 
             <a-box position="0.7 0.15 -0.5" width="0.3" height="0.3" depth="0.3" color="#34495E"></a-box>
 
-            <a-sphere position="0.7 0.5 -0.5" radius="0.13" color="#F9A826"></a-sphere>
+            <a-sphere position="0.7 0.5 -0.5" radius="0.13" color="#F9A826"
+                      animation="property: position; from: 0.7 0.45 -0.5; to: 0.7 0.65 -0.5; dur: 1200; dir: alternate; easing: easeInOutSine; loop: true"></a-sphere>
 
-            <a-box id="sign" position="-0.7 0.3 -0.5" width="0.5" height="0.35" depth="0.04" color="#ECF0F1"></a-box>
+            <a-box id="sign" position="-0.7 0.3 -0.5" width="0.5" height="0.35" depth="0.04" color="#ECF0F1"
+                   animation="property: scale; from: 1 1 1; to: 1.08 1.08 1.08; dur: 1500; dir: alternate; easing: easeInOutSine; loop: true"></a-box>
             <a-text id="caption" value="Vulpes vulpes" position="-0.7 0.3 -0.47" align="center" width="1.2" color="#2C3E50"></a-text>
 
             <a-text value="Red Fox Exhibit" position="0 1.0 0" align="center" width="3" color="#FFFFFF"></a-text>

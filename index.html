@@ -63,9 +63,10 @@
             init: function () {
                 var el = this.el;
                 var data = this.data;
-                var base = el.getAttribute('scale');
+                var base = null;
                 var count = 0;
                 el.addEventListener('click', function () {
+                    if (!base) { base = el.object3D.scale.clone(); }
                     count = (count + 1) % (data.steps + 1);
                     var f = Math.pow(data.factor, count);
                     el.setAttribute('scale', {
